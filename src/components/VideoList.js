@@ -26,6 +26,22 @@ class VideoList extends React.Component {
   //   )
   // }
 
+  // NEW ADDED Method 4: return .map function directly in another function (renderVideos), and renderVideos function could be both arrow function and traditional function
+  // renderVideos = () => {
+  //   return this.props.videos.map(video => {
+  //     return <VideoItem key={video.id.videoId} video={video} />
+  //   });
+  // }
+
+  // render() {
+  //   console.log('ll', this.videolist)
+  //   return (
+  //     <div>
+  //       {this.renderVideos()}
+  //     </div>
+  //   )
+  // }
+
   //method 2: works well
   render() {
     return (
@@ -39,7 +55,6 @@ class VideoList extends React.Component {
       </div>
     )
   }
-
 };
 
 // method 3: functional component works well
